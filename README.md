@@ -13,9 +13,9 @@ Package Contents
 		a. index.php  - Index file for the application. 
 		b. form.php - Form handler which stores game scores to database.
 		c. mysql.php - This file contains database connectivity settings.
-2. JavaScript file - script.js
-3. CSS - style.css
-4. SQL - memorygame.sql  - MySQL table schema for storing scores.
+2. JavaScript file - gamescript.js
+3. CSS - gamestyle.css
+4. SQL - demo.sql  - MySQL table schema for storing scores.
 4. image folder - /img
 
 
@@ -25,7 +25,7 @@ Installation
 
 1. Unzip the zip folder and upload to a webserver directory. Follow same folder structure.
 
-2. Create a database and import/execute mysql schema file (memorygame.sql).
+2. Create a database and import/execute mysql schema file (demo.sql).
 
 3.  Open mysql.php  file and update the hostname, username and password declarations.
 
