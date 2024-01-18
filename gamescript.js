@@ -5,10 +5,6 @@ var cardFlag=0;
 var openCard='';
 var openCardID='';
 var Opencount=0;
-//Showing instructions
-// window.onload = function() {
-//     $('#ol').html();
-//     }
 function start() {
     $(document).ready(function(){
 
@@ -132,7 +128,7 @@ function reset() {
     console.log(newColorSet);
 
     $('#cardCont .cell').each(function () {
-        $(this).css("background-image", ''); // Clear the background image for all cards
+        $(this).css("background-image", ''); 
         $(this).removeClass('selected');
         $(this).addClass('closed');
     });
@@ -151,7 +147,7 @@ function reset() {
 
 function hideCards() {
     $('#cardCont .cell.selected').each(function() {
-        $(this).css("background-image", ''); // Clear the background image
+        $(this).css("background-image", '');
         $(this).removeClass('selected');
         $(this).addClass('closed');
     });
@@ -165,14 +161,13 @@ function showCard(cellobj) {
         color = cellobj.data('color');
         cellobj.css("background-image", 'url(img/' + color + '.png)');
     } else {
-        cellobj.css("background-image", ''); // Clear the background image
+        cellobj.css("background-image", ''); 
     }
 }
 
 function assign(popColorSet) {
-    var uniqueColors = [...popColorSet]; // Make a copy of the color set
-    shuffle(uniqueColors); // Shuffle the unique colors
-
+    var uniqueColors = [...popColorSet]; 
+    shuffle(uniqueColors); 
     $('#cardCont .cell').each(function () {
         col = uniqueColors.pop();
         $(this).data('color', col);
