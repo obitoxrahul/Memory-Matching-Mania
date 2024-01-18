@@ -5,7 +5,7 @@ if (is_ajax()) {
     if (isset($_POST["action"]) && !empty($_POST["action"])) {
         $hostname = "localhost";
         $username = "root";
-        $password = "Rahul@6412";
+        $password = "";
         $database = "demo"; // Replace with your actual database name
 
         // Create a connection
